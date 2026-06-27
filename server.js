@@ -6,7 +6,6 @@ fs.readFile("./README.md", (err, data) => {
   console.log(data.toString());
 });
 const server = http.createServer((req, res) => {
-  if (req.url === "/") res.end("hello");
   if (req.url === "/home") res.end("this is the home page");
 });
 
