@@ -7,7 +7,7 @@ fs.readFile("./README.md", (err, data) => {
 });
 const server = http.createServer((req, res) => {
   if (req.url === "/") res.end("hello");
-  if (req.url === "/login") res.end("login route");
+  if (req.url === "/home") res.end("this is the home page");
 });
 
 server.listen(5000, () => console.log("server listening on port 5000"));
